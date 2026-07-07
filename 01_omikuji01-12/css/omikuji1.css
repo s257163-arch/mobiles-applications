@@ -1,0 +1,31 @@
+.item01 {
+  position: relative;
+  width: 6em;
+  height: 9em;
+  margin: 0;
+  line-height: 1em;
+  overflow: hidden;
+  opacity: 0;
+}
+.item02 {
+  position: relative;
+  width: 6em;
+  height: 12em;
+  margin: 0;
+  line-height: 1em;
+  overflow: hidden;
+  opacity: 0;
+}
+.fade-in {
+  animation: fadein 1.5s ease-out forwards;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
