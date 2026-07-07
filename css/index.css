@@ -122,21 +122,23 @@ a:hover {
 .item01 {
   position: relative;
   width: 6em;
-  height: 9em;
+
   margin: 0;
   line-height: 1em;
-  overflow: hidden;
-  opacity: 0;
+  overflow: visible;
+  opacity: 1;
+  animation: float 2.5s ease-in-out infinite;
 }
 
 .item02 {
   position: relative;
   width: 6em;
-  height: 12em;
+
   margin: 0;
   line-height: 1em;
-  overflow: hidden;
-  opacity: 0;
+  overflow: visible;
+  opacity: 1;
+  animation: float 2.5s ease-in-out infinite;
 }
 .fade-in {
   animation: popIn 0.5s ease forwards;
@@ -158,7 +160,8 @@ a:hover {
 .item01 img,
 .item02 img {
   width: 6em;
-  height: auto;
+  height: 6em;
+  object-fit: cover;
 }
 .item01,
 .item02 {
